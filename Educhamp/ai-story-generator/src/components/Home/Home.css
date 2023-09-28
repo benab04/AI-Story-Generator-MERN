@@ -1,0 +1,139 @@
+.home{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top:7rem;
+}
+.home h2{
+    font-size: 1.5rem;
+    width: 53.625rem;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border: none;
+}
+.prompt{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    width: 53.625rem;
+    min-height: 3rem;
+    height:auto;
+    border-radius: 50px;
+    position: relative;
+    border: 2px solid #e2e2e2;
+    padding-left: 1.4rem;
+    padding-right:3.2rem;
+    resize: vertical; 
+    /* overflow-y: auto; */
+    /* padding-top:0.5rem; */
+}
+.send-icon{
+    position: absolute;
+    margin-top: 2.1rem;
+    margin-left:-2.8rem ;
+    font-size: 1.6rem;
+    cursor:pointer;
+    border:none;
+    background-color: transparent;
+}
+
+.response{
+    width: 52.625rem;
+    min-height:20rem;
+    /* border-radius: 10px;
+    border: inherit; */
+    position: relative;
+    padding-top:2.8rem;
+    padding-left: 1.2rem;
+    padding-right:1.2rem;
+    font-size:1.1rem;
+}
+.response::placeholder{
+    position: absolute;
+    top: 0.6rem;
+}
+.heart{
+    cursor:pointer;
+    font-size: 1.6rem;
+    position:absolute;
+    z-index: 4;
+    margin-left: 1rem;
+    margin-top:0.4rem;
+    color:#707070;
+}
+
+.share{
+    cursor:pointer;
+    font-size: 1.6rem;
+    position:absolute;
+    z-index: 4;
+    margin-left:51rem;
+    margin-top:0rem;
+    color:#312020;
+
+}
+
+.save{
+    cursor:pointer;
+    font-size: 1.6rem;
+    position:absolute;
+    z-index: 4;
+    margin-left:49rem;
+    margin-top:0rem;
+    color:#312020;
+
+}
+
+@media screen  and (max-width:940px){
+    .home h2{
+        font-size: 1.5rem;
+        width: 30rem;
+        padding-top:3rem;
+    }
+    .prompt{
+        /* width:unset !important; */
+      width:30rem;
+    }
+    .response{
+        /* width:unset !important; */
+
+        width:30rem !important;
+    }
+    .save{
+        margin-left:25.5rem;
+    margin-top:0rem;
+    }
+    .share{
+        margin-left:27.5rem;
+    margin-top:0rem;
+    }
+
+}
+@media screen  and (max-width:560px){
+    .home h2{
+        font-size: 1.5rem;
+        width: 15rem;
+        padding-top:3rem;
+    }
+    .prompt{
+        /* width:unset !important; */
+      width:15rem;
+    }
+    .response{
+        /* width:unset !important; */
+
+        width:15rem !important;
+    }
+    .save{
+        margin-left:11rem;
+    margin-top:0rem;
+    }
+    .share{
+        margin-left:12.8rem;
+    margin-top:0rem;
+    }
+
+}

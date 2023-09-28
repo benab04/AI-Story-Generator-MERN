@@ -1,0 +1,333 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Raleway:wght@500&display=swap');
+html {
+  scroll-behavior: smooth;
+  
+}
+
+body {
+  font-family: 'Raleway', sans-serif;
+  background-color:#f4f4f6;
+  overflow-x: hidden;
+}
+
+a {
+  color: #FF9F1C;
+  text-decoration: none;
+  scroll-behavior: smooth;
+  transition-delay: 3s;
+}
+
+a:hover {
+  color: #FF9F1C;
+  text-decoration: none;
+}
+/* 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Raleway", sans-serif;
+} */
+
+
+
+
+/*--------------------------------------------------------------
+# Header
+--------------------------------------------------------------*/
+.header {
+    display: flex;
+    justify-content: center;
+  transition: all 0.5s;
+  z-index: 997;
+  height: 5.3125rem;
+  margin:0;
+  /* border-radius:50px; */
+  background-color: #fff;
+}
+/* .header.header-scrolled {
+  background: rgba(255, 255, 255, 0.54);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(11.3px);
+  -webkit-backdrop-filter: blur(11.3px);
+  border: 1px solid rgba(255, 255, 255, 0.39);
+  transition: background-color 0.4s ease;
+  padding: 15px 0;
+} */
+@media screen and (max-width:1200px) {
+  .header.header-scrolled {
+    background: rgba(255, 255, 255, 0.54);
+    border-radius: 30px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter:unset;
+    -webkit-backdrop-filter: unset;
+    border: 1px solid rgba(255, 255, 255, 0.39);
+    padding: 15px 0;
+  }
+}
+
+.header .logo {
+  line-height: 1;
+}
+
+.header .logo h2 {
+  color:#FF9F1C;
+text-align: center;
+font-family: Suez One;
+font-size: 2rem;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+
+.header .logo span {
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: 0px;
+  color: #FF9F1C;
+  font-family: "Nunito", sans-serif;
+  margin-top: 3px;
+}
+
+/*--------------------------------------------------------------
+# Navigation Menu
+--------------------------------------------------------------*/
+/**
+* Desktop Navigation 
+*/
+.navbar {
+  padding: 0;
+  
+}
+
+.navbar ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  list-style: none;
+  align-items: center;
+}
+
+.navbar li {
+  position: relative;
+}
+
+/* .navbar a,
+.navbar a:focus {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 14px 10px 14px;
+  font-family: "Raleway", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  color: #013289;
+  white-space: nowrap;
+  transition: 0.3s;
+} */
+
+/* .navbar .nav-link i,
+.navbar .nav-link:focus i {
+  font-size: 12px;
+  line-height: 0;
+  align-items: center;
+  margin-left: 5px;
+  text-align: center;
+} */
+/* 
+.navbar .nav-link:before {
+  content: "";
+  position: absolute;
+  width: auto;
+  height: 2px;
+  bottom: 6px;
+  left: 14px;
+  right:14px;
+  background-color: #152bf3;
+  visibility: hidden;
+  transform: scaleX(0);
+  transition: all 0.3s ease-in-out 0s;
+}
+
+.navbar .nav-link:hover:before,
+.navbar li:hover>a:before,
+.navbar .active:before {
+  visibility: visible;
+  transform: scaleX(1);
+}
+
+
+.navbar .nav-link:hover,
+.navbar .active,
+.navbar .active:focus,
+.navbar li:hover>.nav-link {
+  color: #152bf3;
+} */
+
+.navbar .getstarted,
+.navbar .getstarted:focus {
+  background: #FF9F1C;
+  padding: 8px 20px; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 30px;
+  border-radius: 50px;
+  color: #FFF;
+  width: auto;
+/* height: 3.6875rem; */ 
+/* flex-shrink: 0; */
+}
+.navbar .getstarted h3{
+    margin-top:0.5rem;
+    text-align: center;
+font-family: 'Raleway',sans-serif;
+font-size: 1rem;
+font-style: normal;
+font-weight: 700;
+/* line-height: 2; */
+}
+.navbar .getstarted:hover,
+.navbar .getstarted:focus:hover {
+  color: #fff;
+  background: #FF9F1C;
+}
+.sticky{
+  background-color: transparent;
+  transition: 1s;
+}
+
+/* @media (max-width:1200px){
+  .logo{
+    margin-left:30px;
+  }
+} */
+
+@media (max-width: 1366px) {
+  .navbar .dropdown .dropdown ul {
+    left: -90%;
+  }
+
+  .navbar .dropdown .dropdown:hover>ul {
+    left: -100%;
+  }
+}
+
+/**
+* Mobile Navigation 
+*/
+.mobile-nav-toggle {
+  color: #012970;
+  font-size: 28px;
+  cursor: pointer;
+  display: none;
+  line-height: 0;
+  transition: 0.5s;
+  margin-right: auto;
+}
+
+.mobile-nav-toggle.fa-xmark {
+  color: #fff;
+}
+
+@media (max-width: 700px) {
+  .mobile-nav-toggle {
+    display: block;
+  }
+ 
+  .navbar ul {
+    display: none;
+  }
+}
+
+.navbar-mobile {
+  position: fixed;
+  overflow: hidden;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background: rgba(1, 22, 61, 0.9);
+  transition: 0.3s;
+  z-index: 999999;
+}
+
+.navbar-mobile .mobile-nav-toggle {
+  position: absolute;
+  top: 20px;
+  right: 10px;
+  
+}
+.fa-xmark{
+  width:20px;
+  color:#fff;
+}
+
+.navbar-mobile ul {
+  display: block;
+  position: absolute;
+  top: 80px;
+  right: 15px;
+  bottom: 15px;
+  left: 15px;
+  padding: 10px 0;
+  border-radius: 10px;
+  background-color: #fff;
+  overflow-y: auto;
+  transition: 0.3s;
+  
+  
+}
+
+/* .navbar-mobile a,
+.navbar-mobile a:focus {
+  padding: 12px 40px;
+  font-size: min(6vw,30px);
+  cursor:pointer;
+  color: #012970;
+}
+
+.navbar-mobile a:hover,
+.navbar-mobile .active,
+.navbar-mobile li:hover>a {
+  color: #4154f1;
+}
+
+.navbar-mobile .getstarted,
+.navbar-mobile .getstarted:focus {
+  color: #fff;
+  background: #b13933dd;
+  border-radius: 50px;
+  margin:5px;
+  
+} */
+.navbar-mobile .getstarted,
+.navbar-mobile .getstarted:focus {
+  background: #FF9F1C;
+  padding: 8px 20px; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px 10px 10px 10px;
+  border-radius: 50px;
+  color: #FFF;
+  width: auto;
+/* height: 3.6875rem; */ 
+/* flex-shrink: 0; */
+}
+.navbar-mobile .getstarted h3{
+    margin-top:0.5rem;
+    text-align: center;
+font-family: 'Raleway',sans-serif;
+font-size: 1rem;
+font-style: normal;
+font-weight: 700;
+/* line-height: 2; */
+}
+.navbar-mobile .getstarted:hover,
+.navbar-mobile .getstarted:focus:hover {
+  color: #fff;
+  background: #FF9F1C;
+}
